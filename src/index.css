@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Source Serif Pro', serif;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
+  box-shadow: rgb(40, 159, 237, 0.4) 5px 5px, rgb(40, 159, 237, 0.3) 10px 10px,
+    rgb(40, 159, 237, 0.2) 15px 15px, rgb(40, 159, 237, 0.1) 20px 20px,
+    rgb(40, 159, 237, 0.05) 25px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 5px 20px;
+}
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+.card-bottom {
+  text-align: center;
+}
+i {
+  font-size: 30px;
+  color: green;
+  margin: auto;
+}
+.card-content {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.card-bottom {
+  font-size: 14px;
+}
+@media (max-width: 550px) {
+  html{
+    font-size: 14px;
+  }
+  .card-body {
+    width: 300px;
+  }
+  .card-row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  html{
+    font-size: 12px;
+  }
+  .card-body {
+    width: 200px;
+  }
+}
